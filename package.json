@@ -1,0 +1,23 @@
+{
+  "name": "avatar",
+  "version": "1.0.0",
+  "description": "## Problem Statement",
+  "main": "download_avatars.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skphi13/avatar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skphi13/avatar/issues"
+  },
+  "homepage": "https://github.com/skphi13/avatar#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
