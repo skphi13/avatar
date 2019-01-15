@@ -39,17 +39,13 @@ function getRepoContributors(repoOwner, repoName, cb) {
 
 
 
-
+  if (repoOwner === undefined || repoName === undefined) {
+    console.log("Command line arguments are incorrect. Please input <repoOwner> <repoName>");
+  } else 
   getRepoContributors(repoOwner, repoName, function(err, body) {
     var contributors = JSON.parse(body);
-    // console.log(contributors)
-        //results += data2[0].avatar_url
-        // console.log(results);
 
     contributors.forEach(function(contributor) {
-        //console.log(contributor.avatar_url)
-
          downloadImageByURL( contributor.avatar_url , 'avatar/' + contributor.login + '.jpg');
     });
-
   });
